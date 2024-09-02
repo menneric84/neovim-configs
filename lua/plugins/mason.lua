@@ -26,9 +26,6 @@ return {
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities
       })
-      lspconfig.volar.setup({
-        capabilities = capabilities
-      })
       lspconfig.html.setup({
         capabilities = capabilities
       })
@@ -40,6 +37,7 @@ return {
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {})
     end,
   },
 }

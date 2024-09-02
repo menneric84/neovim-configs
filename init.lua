@@ -4,10 +4,11 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.g.mapleader = "<Space>"
 
+
 require("config.lazy")
 
 require("catppuccin").setup()
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme = "catppuccin"
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
@@ -24,3 +25,4 @@ configs.setup({
 	highlight = { enable = true },
 	indent = { enable = true },
 })
+
