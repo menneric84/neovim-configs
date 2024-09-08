@@ -23,6 +23,10 @@ return {
       lspconfig.tsserver.setup({
         capabilities = capabilities
       })
+    lspconfig.gleam.setup({})
+      lspconfig.tsserver.setup({
+        capabilities = capabilities
+      })
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities
       })
